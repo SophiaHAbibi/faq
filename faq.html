@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body {
+    direction: rtl;
+}
+
+#myDIV {
+  display: none;
+  background: #ccc;
+  transition: 0.5s;
+}
+.faq-container {
+    width: 40%;
+    margin: 0 auto;
+}
+.faq-list {
+    background: #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.faq-list a  {
+
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <div class="faq-container">
+        <div class="faq-list">
+            <a onclick="myFunction()">سوال</a>
+            <div id="myDIV">
+            پاسخ</div>
+        </div>
+        <div class="faq-list">
+            <a onclick="myFunction()">سوال</a>
+            <div id="myDIV">
+            پاسخ</div>
+        </div>
+        <div class="faq-list">
+            <a onclick="myFunction()">سوال</a>
+            <div id="myDIV">
+            پاسخ</div>
+        </div>
+        <div class="faq-list">
+            <a onclick="myFunction()">سوال</a>
+            <div id="myDIV">
+            پاسخ</div>
+        </div>
+        <div class="faq-list">
+            <a onclick="myFunction()">سوال</a>
+            <div id="myDIV">
+            پاسخ</div>
+        </div>
+    </div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById('myDIV');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+</script>
+
+</body>
+</html>
